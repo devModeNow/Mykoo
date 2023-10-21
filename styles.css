@@ -1,0 +1,111 @@
+/* #version=0.0.0-1#52 rf 2023-10-21T23:44:57 A64E3B53CE5F0A0 */
+/* #version=0.0.0-1#51 rf 2023-10-21T23:42:39 389C090E71C82A97 */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    z-index: 8;
+    padding: 20px;
+    margin: 0 auto;
+    text-align :center;
+    width: 200px;
+    min-height: 200px;
+    margin-top: 30vh;
+    transition: 500ms;
+    border-radius: 50%;
+    color: white;
+}
+
+#result{
+    z-index: 9;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 2%;
+    box-shadow: 2px 5px 150px 5px rgb(216, 254, 61);
+    width: 70vw;
+    min-height: 45vh;
+    margin-top: 10vh;
+    color: black;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#sus{
+    margin: 0 auto;
+    height: 25vh;
+    width: 60vw;
+}
+
+#shy {
+    margin: 0 auto;
+    height: 25vh;
+    width: 50vw;
+    display: none;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    font-size: 20pt;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+.container:hover{
+    z-index: 8;
+    border-radius: 2%;
+    box-shadow: 2px 5px 150px 5px rgb(172, 42, 184);
+    width: 70vw;
+    height: 45vh;
+    margin-top: 10vh;
+    color: black;
+}
+
+.container:hover button {
+    display: inline;
+}
+
+.container:hover #shy {
+    display: block;
+}
+
+.container:hover .yes {
+    background-color: rgb(95, 218, 95);
+    color: white;
+}
+
+.container:hover .no {
+    background-color: rgb(224, 26, 26);
+    color: white;
+}
+
+@media screen and (min-width:600px) {
+    .container:hover{
+        border-radius: 2%;
+        box-shadow: 2px 5px 150px 5px rgb(172, 42, 184);
+        width: 70vw;
+        height: 60vh;
+        margin-top: 10vh;
+        color: black;
+    }
+
+    .container:hover #shy {
+        display: block;
+        height: 40vh;
+        width: 40vw;
+    }
+
+    #result{
+        width: 70vw;
+        min-height: 60vh;
+    }
+
+    #sus{
+        height: 50vh;
+        width: 60vw;
+    }
+}
